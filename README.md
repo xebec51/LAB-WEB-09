@@ -1,4 +1,4 @@
-# Laboratorium Pemrograman Web (LAB-WEB-09) - Ganjil 2025
+# Laboratorium Pemrograman Web (LAB-WEB-09) - Semester Ganjil 2025
 ## Repositori Resmi Kelompok Asistensi Web-09
 
 ---
