@@ -1,0 +1,252 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset & dasar */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff9f9; 
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Link */
+a {
+  text-decoration: none;
+  color: #e75480;
+  transition: 0.3s;
+}
+a:hover {
+  color: #c6426e;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #ffdde1, #fcc2d7);
+  padding: 18px 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header .logo {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Navigasi */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 22px;
+}
+nav ul li a {
+  color: #fff;
+  font-weight: 500;
+  padding-bottom: 4px;
+  position: relative;
+}
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #fff;
+  transition: width 0.3s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #ffe0eb, #fff5f8);
+  border-radius: 14px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+.hero h1 {
+  margin-top: 15px;
+  font-size: 28px;
+  color: #e75480;
+}
+.hero p {
+  font-style: italic;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Section umum */
+section {
+  padding: 35px;
+  max-width: 950px;
+  margin: 25px auto;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+section:hover {
+  transform: translateY(-4px);
+}
+
+/* Garis pink di atas setiap kotak */
+section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(90deg, #ff9a9e, #fecfef);
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+/* Judul section */
+section h2 {
+  color: #e75480;
+  border-left: 5px solid #fcc2d7;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+/* Tabel (semua) */
+table {
+  width: 100%;
+  border-collapse: separate; /* biar bisa kasih border-radius */
+  border-spacing: 0;
+  margin: 15px 0;
+  font-size: 15px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* shadow lembut */
+}
+
+/* Header */
+th {
+  text-align: left;
+  padding: 14px 16px;
+  font-weight: 600;
+  color: #e75480;
+  background: #ffeaf1;
+  border-bottom: 2px solid #fcc2d7; /* hanya garis bawah */
+}
+
+/* Isi */
+td {
+  padding: 12px 16px;
+  background: #fff;
+  border-bottom: 1px solid #fddde6; 
+}
+
+/* Row bergantian */
+tr:nth-child(even) td {
+  background-color: #fff9fb; 
+}
+
+/* Hover */
+tr:hover td {
+  background-color: #ffe9f1;
+  transition: 0.3s;
+}
+
+
+
+/* Gambar profil */
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+  border: 5px solid #fcc2d7;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+/* List */
+ul, ol {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+ul li, ol li {
+  margin-bottom: 6px;
+}
+
+/* Form input */
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ffd6e0;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+input:focus, textarea:focus {
+  outline: none;
+  border: 1px solid #ee9ca7;
+  box-shadow: 0 0 6px rgba(238,156,167,0.4);
+}
+
+/* Radio button horizontal */
+.contact-form .radio-group {
+  display: flex;
+  gap: 15px;
+  margin: 10px 0;
+}
+.contact-form .radio-group label {
+  margin: 0;
+  cursor: pointer;
+}
+
+/* Tombol */
+input[type="submit"] {
+  background: linear-gradient(135deg, #ff9a9e, #fecfef);
+  border: none;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+}
+input[type="submit"]:hover {
+  background: linear-gradient(135deg, #f5576c, #f093fb);
+  transform: scale(1.03);
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(135deg, #fcc2d7, #ffdde1);
+  color: #ba419c;
+  text-align: center;
+  padding: 18px;
+  margin-top: auto;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.05);
+}
+footer a {
+  color: #ed418b;
+}
+footer a:hover {
+  color: #fd567b;
+}
