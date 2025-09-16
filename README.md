@@ -1,7 +1,5 @@
 # Laboratorium Pemrograman Web (LAB-WEB-09) - Ganjil 2025
-## Repositori Resmi Pengumpulan Tugas Praktikum
-
-Selamat datang di repositori resmi untuk Praktikum Pemrograman Web. Repositori ini digunakan sebagai satu-satunya tempat untuk mengumpulkan semua tugas praktikum. Mohon baca dan ikuti semua panduan dengan saksama. 👨‍💻👩‍💻
+## Repositori Resmi Kelompok Asistensi Web-09
 
 ---
 
@@ -29,10 +27,10 @@ Ikuti langkah-langkah berikut. Perhatikan mana yang hanya dilakukan sekali dan m
 
 #### Langkah 1: Pengaturan Awal (Hanya Dilakukan Sekali)
 
-1.  **Fork Repositori:** Klik tombol **Fork** di pojok kanan atas halaman repositori utama: [https://github.com/xebec51/LAB-WEB-09](https://github.com/xebec51/LAB-WEB-09). Ini akan membuat salinan repositori ke akun GitHub Anda.
+1.  **Fork Repositori:** Klik tombol **Fork** di pojok kanan atas halaman repositori utama: [https://github.com/xebec51/LAB-WEB-09](https://github.com/xebec51/LAB-WEB-09). Ini akan membuat salinan repositori ke akun GitHub Anda. 
 2.  **Clone Repositori Fork Anda:** Buka terminal/Git Bash, lalu jalankan perintah `clone`. Ganti `YOUR_USERNAME` dengan username GitHub Anda.
     ```sh
-    git clone [https://github.com/YOUR_USERNAME/LAB-WEB-09.git](https://github.com/YOUR_USERNAME/LAB-WEB-09.git)
+    git clone https://github.com/YOUR_USERNAME/LAB-WEB-09.git
     ```
 3.  **Masuk ke Folder Proyek:**
     ```sh
@@ -45,8 +43,8 @@ Ikuti langkah-langkah berikut. Perhatikan mana yang hanya dilakukan sekali dan m
 
     Gunakan perintah `git checkout -b <nama-branch>`. Flag `-b` adalah singkatan dari `--branch`, yang merupakan perintah untuk **membuat branch baru dan langsung berpindah** ke branch tersebut dalam satu langkah.
     ```sh
-    # Contoh menggunakan NIM Anda
-    git checkout -b H071231074
+    # Contoh menggunakan NIM
+    git checkout -b H071241001
     ```
     </details>
 
@@ -57,13 +55,13 @@ Ikuti langkah-langkah berikut. Perhatikan mana yang hanya dilakukan sekali dan m
     
     1.  **`git branch <nama-branch>`** untuk **membuat** branch baru.
         ```sh
-        # Contoh menggunakan NIM Anda
-        git branch H071231074
+        # Contoh menggunakan NIM
+        git branch H071241001
         ```
     2.  **`git checkout <nama-branch>`** untuk **berpindah** ke branch yang sudah dibuat.
         ```sh
-        # Contoh menggunakan NIM Anda
-        git checkout H071231074
+        # Contoh menggunakan NIM
+        git checkout H071241001
         ```
     </details>
     
@@ -74,7 +72,7 @@ Ikuti langkah-langkah berikut. Perhatikan mana yang hanya dilakukan sekali dan m
 1.  **Pastikan Anda di Branch yang Benar:** Sebelum mulai, pastikan Anda sudah berada di branch NIM Anda.
     ```sh
     # Contoh menggunakan NIM Anda
-    git checkout H071231074
+    git checkout H071241001
     ```
 2.  **Buat Folder Pribadi & Tugas:**
     * Buat folder dengan format **`NIM_NamaLengkap`** jika belum ada.
@@ -82,8 +80,8 @@ Ikuti langkah-langkah berikut. Perhatikan mana yang hanya dilakukan sekali dan m
         > **PENTING: Aturan Penamaan Folder Nama**
         > Untuk `NamaLengkap`, hilangkan semua spasi dan gunakan huruf kapital di awal setiap kata. Teknik penamaan ini disebut **PascalCase** (atau *UpperCamelCase*). Ini adalah praktik umum dalam pemrograman untuk memastikan nama folder dan file mudah dibaca oleh sistem dan tidak menyebabkan eror.
         >
-        > **Contoh yang Benar:** `H071231074_MuhRinaldiRuslan`
-        > **Contoh yang Salah:** `H071231074_Muh Rinaldi Ruslan` (menggunakan spasi)
+        > **Contoh yang Benar:** `H071241001_MuhRinaldiRuslan`
+        > **Contoh yang Salah:** `H071241001_Muh Rinaldi Ruslan` (menggunakan spasi)
 
     * Di dalam folder pribadi Anda (`NIM_NamaLengkap`), buat folder tugas baru untuk minggu ini dengan format **`Tugas_XX`** (contoh: `Tugas_01`, `Tugas_02`, dst.).
 
@@ -111,15 +109,15 @@ Ikuti langkah-langkah berikut. Perhatikan mana yang hanya dilakukan sekali dan m
     git add .
 
     # Commit dengan pesan yang jelas sesuai tugas minggu ini
-    git commit -m "[H071231074] Mengumpulkan Tugas 02"
+    git commit -m "[NIM_ANDA] Mengumpulkan Tugas 02"
     ```
 2.  **Push ke Branch Anda di Fork:**
     ```sh
-    # Contoh menggunakan NIM Anda
-    git push origin H071231074
+    # Contoh menggunakan NIM
+    git push origin H071241001
     ```
 3.  **Buat atau Perbarui Pull Request:**
-    * **Jika ini adalah pengumpulan PERTAMA Anda:** Buka halaman fork Anda di GitHub. Klik **"Compare & pull request"**, beri judul `Pengumpulan Tugas - H071231074_MuhRinaldiRuslan`, lalu buat Pull Request.
+    * **Jika ini adalah pengumpulan PERTAMA Anda:** Buka halaman fork Anda di GitHub. Klik **"Compare & pull request"**, beri judul `Pengumpulan Tugas - NIM_Nama Lengkap`, lalu buat Pull Request.
     * **Untuk minggu-minggu BERIKUTNYA:** Anda **TIDAK PERLU** membuat Pull Request baru. Cukup lakukan `push` seperti pada langkah 3.2, dan commit terbaru Anda akan otomatis ditambahkan ke Pull Request yang sudah ada.
 
 ---
@@ -127,12 +125,12 @@ Ikuti langkah-langkah berikut. Perhatikan mana yang hanya dilakukan sekali dan m
 ### ⚠️ Aturan Penting & Praktik Terbaik
 
 * **Satu Praktikan, Satu Branch.** Seluruh pekerjaan selama satu semester dilakukan di dalam branch NIM Anda.
-* **Satu Praktikan, Satu Pull Request.** Jangan pernah menutup PR Anda sampai akhir semester, kecuali diinstruksikan oleh asisten.
+* **Satu Praktikan, Satu Pull Request.** Jangan pernah menutup PR Anda sampai akhir semester, kecuali diinstruksikan.
 * **Gunakan Penamaan PascalCase** untuk folder nama Anda.
 * **Commit Message Jelas:** Gunakan format `[NIM] Aksi yang dilakukan` agar mudah dilacak.
 
 <details>
-<summary>👉 **Klik di sini jika butuh bantuan tentang Personal Access Token (PAT)**</summary>
+<summary>👉 <strong>Klik di sini jika butuh bantuan tentang Personal Access Token (PAT)</strong></summary>
 
 Jika Git meminta *password* saat Anda melakukan `push`, Anda harus menggunakan **Personal Access Token (PAT)**, bukan password akun GitHub Anda.
 
@@ -151,4 +149,8 @@ Jika Git meminta *password* saat Anda melakukan `push`, Anda harus menggunakan *
 
 <br>
 
-Jika ada kendala, jangan ragu bertanya kepada Asisten Lab. Selamat mengerjakan!
+Jika ada kendala, jangan ragu bertanya kepada Asisten kalian. Selamat mengerjakan!😇
+
+Salam, <br><br>
+**Naldi**<br>
+Asisten Praktikum Web-09 Tahun 2025
