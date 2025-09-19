@@ -1,0 +1,387 @@
+@media all {
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(215, 215, 215);
+  }
+
+  .container {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+  }
+
+  /* HEADER */
+  .header {
+    grid-area: header;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .menu-icon {
+    background-color: grey;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .menu-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu-list ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+    display: block;
+  }
+
+  /* MAIN */
+  .main {
+    grid-area: main;
+    padding: 30px;
+    display: grid;
+    grid-template-areas:
+      "hero"
+      "quick";
+    gap: 30px;
+  }
+
+  /* HERO */
+  .hero {
+    grid-area: hero;
+    display: grid;
+    grid-template-areas:
+      ". profile photo ."
+      ". motto motto .";
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .hero .profile {
+    grid-area: profile;
+  }
+
+  .hero .photo {
+    grid-area: photo;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero .photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #333;
+  }
+
+  .hero .motto {
+    grid-area: motto;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.2rem;
+  }
+
+  /* ABOUT */
+  .table {
+    text-align: center;
+    padding: 0 100px;
+    grid-area: quick;
+  }
+
+  .table h2 {
+    margin-bottom: 20px;
+  }
+
+  .table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .table th,
+  .table td {
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: left;
+  }
+
+  .table td {
+    background-color: rgb(189, 189, 189);
+  }
+
+  .table th {
+    background: #f2f2f2;
+  }
+
+  .bio {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    line-height: 1.6;
+    background: white;
+    border-radius: 8px;
+  }
+
+  .education-skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+  }
+
+  .education,
+  .skills {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .education h2,
+  .skills h2 {
+    text-align: center;
+  }
+
+  .education dl,
+  .skills ul,
+  .skills ol {
+    margin: 0;
+    padding: 0 20px;
+  }
+
+  .education dt,
+  .skills li {
+    font-weight: bold;
+  }
+
+  .hobbies {
+    max-width: 600px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    text-align: left;
+  }
+
+  .hobbies h2 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .hobbies ol {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  .hobbies li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+  }
+
+  /* Contact */
+  .table a {
+    text-decoration: none;
+    color: rgb(8, 168, 8);
+  }
+
+  .table a:hover {
+    color: rgb(4, 223, 4);
+  }
+
+  .contact-form {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contact-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form input[type="tel"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: -10px;
+  }
+
+  .contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  .contact-form p {
+    margin: 0;
+    font-weight: bold;
+  }
+
+
+  .contact-form input[type="radio"],
+  .contact-form input[type="checkbox"] {
+    margin-right: 8px;
+  }
+
+  
+
+  .contact-form button {
+    background: #333;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+
+  .contact-form button:hover {
+    background: #555;
+  }
+
+  .footer {
+    grid-area: footer;
+    text-align: center;
+    padding: 15px;
+    background: #333;
+    color: white;
+  }
+
+  .footer a {
+    color: aqua;
+    margin: 0 5px;
+    text-decoration: none;
+  }
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 600px) {
+  .menu-list {
+    background-color: #333;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+
+  .menu-list ul li {
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .menu-btn:checked ~ .menu-list {
+    display: flex;
+  }
+
+  .menu-list ul li:hover {
+    background-color: #4b4b4b;
+  }
+
+  .hero {
+    grid-template-areas:
+      "photo"
+      "profile"
+      "motto";
+    grid-template-columns: 1fr;
+  }
+
+  .hero .photo img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .table {
+    padding: 15px;
+  }
+
+  .bio {
+    padding: 15px;
+    margin: 15px;
+  }
+
+  .education-skills {
+    grid-template-columns: 1fr;
+    margin: 15px;
+  }
+
+  .hobbies {
+    margin: 15px;
+  }
+
+  .contact-form {
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .menu-btn,
+  .menu-icon {
+    display: none;
+  }
+
+  .menu-list ul {
+    display: flex;
+    gap: 20px;
+  }
+
+  .menu-list ul li {
+    list-style: none;
+  }
+
+  .menu-list ul li a:hover {
+    background: #555;
+    border-radius: 4px;
+  }
+}
