@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="header">
+      <div class="logo">DZAKY</div>
+      <input type="checkbox" id="menu" class="menu-btn" />
+      <label for="menu" class="menu-icon">☰</label>
+      <div class="menu-list">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="table">
+      <h2>Contact</h2>
+      <table>
+        <tr>
+          <th>Email</th>
+          <td>abd@gmail.com</td>
+        </tr>
+        <tr>
+          <th>Nomor Telepon</th>
+          <td>08122222222</td>
+        </tr>
+        <tr>
+          <th>LinkedIn</th>
+          <td><a href="https://id.linkedin.com/">Klik di sini</a></td>
+        </tr>
+        <tr>
+          <th>Instagram</th>
+          <td><a href="https://www.instagram.com/">Klik di sini</a></td>
+        </tr>
+        <tr>
+          <th>GitHub</th>
+          <td><a href="https://github.com/">Klik di sini</a></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="contact-form">
+      <h2>Send a Message</h2>
+      <form action="#" method="post">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="telepon">Nomor Telepon:</label>
+        <input type="tel" id="telepon" name="telepon" required />
+
+        <p>Tipe Pesan:</p>
+        <label>
+          <input type="radio" name="tipe" value="Pertanyaan" required />
+          Pertanyaan
+        </label>
+        <label>
+          <input type="radio" name="tipe" value="Kritik" />
+          Kritik
+        </label>
+        <label>
+          <input type="radio" name="tipe" value="Saran" />
+          Saran
+        </label>
+        <label>
+          <input type="radio" name="tipe" value="Kerjasama" />
+          Kerjasama
+        </label>
+
+        <label for="pesan">Pesan:</label>
+        <textarea id="pesan" name="pesan" rows="5" required></textarea>
+
+        <label>
+          <input type="checkbox" name="persetujuan" required />
+          Saya menyetujui bahwa data ini dapat digunakan untuk menghubungi saya
+          kembali.
+        </label>
+        
+
+        <button type="submit">Kirim</button>
+      </form>
+    </div>
+
+    <footer class="footer">
+      <p>
+        &copy; 2025 Abdurrahman Dzaky Safrullah |
+        <a href="https://www.github.com/ammangdzaky/">GitHub</a> |
+        <a href="https://www.instagram.com/ammangdzaky/">Instagram</a>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #333;
+  color: white;
+  position: relative;
+}
+
+/* Logo */
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Menu links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff9800;
+}
+
+/* Tombol hamburger (default: hidden) */
+.menu-btn {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.menu-btn span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 3px;
+}
+
+/* Sembunyikan checkbox asli */
+#menu-toggle {
+  display: none;
+}
+
+/* Responsive (mobile) */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* sembunyikan menu */
+    flex-direction: column;
+    background: #444;
+    position: absolute;
+    top: 60px; /* tinggi navbar */
+    right: 20px;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  /* Jika checkbox dicentang → tampilkan menu */
+  #menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: flex; /* tampilkan tombol menu */
+  }
+}
