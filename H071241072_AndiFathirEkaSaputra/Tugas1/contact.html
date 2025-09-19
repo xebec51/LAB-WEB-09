@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Saya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>AF</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="about.html">Tentang Saya</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-info-section">
+            <h2>Informasi Kontak</h2>
+            <table>
+                <tr>
+                    <th>Email</th>
+                    <td>█████@█████.com</td>
+                </tr>
+                <tr>
+                    <th>Nomor Telepon</th>
+                    <td>+628█████████</td>
+                </tr>
+                <tr>
+                    <th>Facebook</th>
+                    <td><a href="https://www.facebook.com/share/16zXKr29Qr/">Andi Fathir</a></td>
+                </tr>
+                <tr>
+                    <th>Instagram</th>
+                    <td><a href="https://www.instagram.com/fathir.royal">@fathir.royal</a></td>
+                </tr>
+                <tr>
+                    <th>GitHub</th>
+                    <td><a href="https://github.com/Fathir-Royal">Fathir-Royal</a></td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="contact-form-section">
+            <h2>Formulir Kontak</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="phone">Nomor Telepon:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <fieldset class="tipe_pesan">
+                    <div>
+                        <p>Tipe Pesan:</p>
+                        <label for="question">Pertanyaan</label>
+                        <input type="radio" id="question" name="message_type" value="pertanyaan">
+                        <label for="criticism">Kritik</label>
+                        <input type="radio" id="criticism" name="message_type" value="kritik">
+                        <label for="suggestion">Saran</label>
+                        <input type="radio" id="suggestion" name="message_type" value="saran">
+                        <label for="collaboration">Kerjasama</label>
+                        <input type="radio" id="collaboration" name="message_type" value="kerjasama">
+                    </div>
+                </fieldset>
+                <div>
+                    <label for="message">Pesan Detail:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" id="agreement" name="agreement" required>
+                    <label for="agreement">Saya setuju data saya akan digunakan untuk keperluan ini.</label>
+                </div>
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Andi Fa'athir. Hak Cipta Dilindungi.</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/share/16zXKr29Qr/">Facebook</a> |
+            <a href="https://www.instagram.com/fathir.royal">Instagram</a> |
+            <a href="https://github.com/Fathir-Royal">GitHub</a>
+        </div>
+    </footer>
+
+</body>
+</html>
