@@ -1,0 +1,214 @@
+:root {
+    --bg-color: #F8F5E9;
+    --text-color: #4F361C;
+    --accent-color: #A68367;
+    --light-accent: #C8AA8F; 
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 ;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/vintage-leaves.png');
+    background-repeat: repeat;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--light-accent);
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-family: Georgia, serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    transition: color 0.4s;
+}
+
+nav ul li a:hover {
+    color: white;
+    background-color: var(--accent-color);
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px 0;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+section {
+    background-color: #fff;
+    border: 1px solid var(--accent-color);
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.hero-section {
+    text-align: center;
+}
+
+.hero-section img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 4px solid var(--accent-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+td,th {
+    border: 1px solid var(--accent-color);
+    padding: 20px;
+    text-align: left;
+}
+
+thead {
+    background-color: var(--light-accent);
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.Form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+fieldset input[type="radio"] {
+    margin-right: 10px;
+}
+
+fieldset label {
+    display: inline-block;
+    font-weight: normal;
+    margin-right: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--text-color);
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: var(--light-accent);
+    border-top: 2px solid var(--accent-color);
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: white;
+    background-color: var(--accent-color);
+    border-radius: 5px;
+    padding: 2px 6px;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Kontak</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Portofolio Saya</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Tentang Saya</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-info-section">
+            <h2>Informasi Kontak</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Email</td>
+                        <td>irafitrinovanda@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>Nomor Telepon</td>
+                        <td>+62-895-2800-2727</td>
+                    </tr>
+                    <tr>
+                        <td>LinkedIn</td>
+                        <td><a href="https://www.linkedin.com/in/anugrah-fitri-817037219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">linkedin.com/in/anugrahfitri</a></td>
+                    </tr>
+                    <tr>
+                        <td>Instagram</td>
+                        <td><a href="https://www.instagram.com/ira.fitri4343?igsh=NzhvMTNiZHdnMmV3" target="_blank">@anugrahnovanda</a></td>
+                    </tr>
+                    <tr>
+                        <td>GitHub</td>
+                        <td><a href="https://github.com/Anugrahfitri-code" target="_blank">github.com/anugrahfitri-code</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="contact-form-section">
+            <h2>Kirim Pesan</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Nomor Telepon:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <fieldset>
+                        <legend><strong>Tipe Pesan:</strong><span style="color: red;">*</span></legend> 
+                        <input type="radio" id="question" name="message_type" value="pertanyaan" required>
+                        <label for="question">Pertanyaan</label>
+                        
+                        <input type="radio" id="criticism" name="message_type" value="kritik">
+                        <label for="criticism">Kritik</label>
+                        
+                        <input type="radio" id="suggestion" name="message_type" value="saran">
+                        <label for="suggestion">Saran</label>
+                        
+                        <input type="radio" id="collaboration" name="message_type" value="kerjasama">
+                        <label for="collaboration">Kerja Sama</label>
+                    </fieldset>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Pesan Detail:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <label for="consent">Saya setuju data saya diproses untuk keperluan ini.</label>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit">Kirim Pesan</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Portofolio Anugrah. All Rights Reserved.</p>
+        <p>
+            <a href="https://www.linkedin.com/in/anugrah-fitri-817037219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a> 
+            <a href="https://github.com/Anugrahfitri-code">GitHub</a> 
+            <a href="https://www.instagram.com/ira.fitri4343?igsh=NzhvMTNiZHdnMmV3">Instagram</a>
+        </p>
+    </footer>
+
+</body>
+</html>

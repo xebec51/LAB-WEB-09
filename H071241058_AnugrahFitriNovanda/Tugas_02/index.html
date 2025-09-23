@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TemanDengar - Ruang Aman Anda Bercerita</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="">
+    <header class="sticky top-0 bg-white shadow-md z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#beranda" class="">TemanDengar</a>
+            <div class="hidden md:flex space-x-8 text-gray-600 font-medium">
+                <a href="#beranda" class="hover:text-sky-600 transition duration-300">Beranda</a>
+                <a href="#tentang" class="hover:text-sky-600 transition duration-300">Tentang</a>
+                <a href="#layanan" class="hover:text-sky-600 transition duration-300">Layanan</a>
+                <a href="#kontak" class="hover:text-sky-600 transition duration-300">Kontak</a>
+            </div>
+            <a href="#kontak" class="hidden md:block bg-sky-600 hover:bg-sky-700 text-white py-2 px-5 rounded-full font-medium transition duration-300">
+                Mulai Sesi
+            </a>
+            <div class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 text-gray-700">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="beranda" class="bg-sky-50 relative overflow-hidden">
+
+            <div class="container mx-auto px-6 py-24 md:py-32 text-center relative z-10">
+                <h1 class="text-4xl md:text-5xl font-bold text-sky-900 mb-4 animate-bounce">
+                    Merasa Cemas? Anda Tidak Sendiri.
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto animate-pulse">
+                    Kami disini untuk mendengarkan setiap cerita Anda, kapanpun Anda butuh, tanpa menghakimi.
+                </p>
+                <a href="layanan" class="inline-block bg-sky-600 hover:bg-sky-700 text-white py-3 px-6 rounded-full font-medium transition duration-300 mt-6">
+                    Lihat Layanan Kami
+                </a>
+            </div>
+
+            <div class="absolute -top-12 -left-12 w-48 h-48 bg-sky-500 rounded-full opacity-20 animate-bounce"></div>
+            <div class="absolute top-1/4 right-5 w-32 h-32 bg-sky-400 rounded-lg opacity-20 animate-spin"></div>
+            <div class="absolute bottom-10 left-1/3 w-24 h-24 bg-sky-600 rounded-full opacity-25 animate-pulse"></div>
+            <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-sky-300 rounded-full opacity-20 animate-spin"></div>
+            <div class="absolute top-3/4 left-10 w-20 h-20 bg-sky-500 rounded-xl transform rotate-12 opacity-25 animate-ping"></div>
+
+            <div class="absolute top-10 right-1/3 w-16 h-16 bg-sky-400 rounded-lg opacity-30 animate-pulse"></div>
+            <div class="absolute top-1/2 left-1/2 w-32 h-32 bg-sky-500 rounded-xl opacity-20 animate-bounce"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-24 h-24 bg-sky-600 rounded-full opacity-30 animate-ping"></div>
+            <div class="absolute top-1/2 left-10 w-16 h-16 bg-sky-400 rounded-full opacity-30 animate-pulse"></div>
+            <div class="absolute bottom-0 -left-5 w-24 h-24 bg-sky-500 rounded-lg opacity-20 animate-spin"></div>
+
+        </section>
+
+        <section id="tentang" class="py-20">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="Foto.png" alt="Sesi Diskusi yang nyaman" class="rounded-lg shadow-xl w-auto">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-sky-900 mb-6">
+                        Ruang Aman, Pendengar Setia.
+                    </h2>
+                    <p class="text-gray-700 text-2xl mb-6">
+                        TemanDengar adalah platform yang menyediakan teman bicara professional, kami bukan psikolog atau terapis, kami adalah pendengar terlatih yang menyediakan ruang aman, anonim dan 100% bebas penghakiman untuk Anda.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex ">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10 text-sky-600">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            <span class="ml-3 font-medium text-gray-900 text-xl">100% Anonim & Rahasia Terjamin</span>
+                        </li>
+                        <li class="flex ">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10 text-sky-600">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                            </svg>
+                            <span class="ml-3 font-medium text-gray-900 text-xl">Pendengar</span>
+                        </li>
+                        <li class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10 text-sky-600">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            <span class="ml-3 font-medium text-gray-900 text-xl">Jadwal Sesi yang Fleksibel </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="layanan" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-sky-900 mb-12">
+                    Pilih Sesi untuk Anda
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <div class="bg-white p-8 border-t-4 border-sky-500 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300">
+                        <div class="flex items-center justify-center bg-sky-100 w-16 h-16 rounded-full mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 text-sky-600">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Sesi Curhat via Chat</h3>
+                        <p class="text-gray-600">Berbagi cerita dengan nyaman melalui teks, kapan saja, dimana saja.</p>
+                    </div>
+                    
+                    <div class="bg-white p-8 border-t-4 border-sky-500 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300">
+                        <div class="flex items-center justify-center bg-sky-100 w-16 h-16 rounded-full mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 text-sky-600">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Teman Ngobrol (Voice Call)</h3>
+                        <p class="text-gray-600 ">Mendengar suara yang ramah bisa menenangkan. Bicarakan apapun via telepon</p>
+                    </div>
+
+                    <div class="bg-white p-8 border-t-4 border-sky-500 rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300">
+                        <div class="flex items-center justify-center bg-sky-100 w-16 h-16 rounded-full mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 text-sky-600">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Sesi Tatap Muka (Video Call)</h3>
+                        <p class="text-gray-600 ">Untuk koneksi yang lebih personal, lakukan sesi video call dengan pendengar kami.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="testimoni" class="py-20 ">
+            <div class="container mx-auto px-6 max-w-3xl text-center">
+                <h2 class="text-3xl font-bold text-sky-900 mb-10">Apa Kata Mereka</h2>
+                <div class="bg-sky-50 p-8 md:p-12 rounded-xl shadow-inner relative">
+                    <p class="text-xl md:text-2xl italic text-gray-700 mb-6">
+                        "Saya merasa jauh lebih lega setelah bercerita disini. Benar-benar didengarkan tanpa dihakimi. Sangat melegakan. Terima kasih TemanDengar!"
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontak" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6 max-w-lg">
+                <h2 class="text-3xl font-bold text-center text-sky-900 mb-2">Siap untuk Merasa Lebih Baik?</h2>
+                <p class="text-center text-gray-600 mb-10">Jadwalkan sesi pertama Anda. Cukup isi form dibawah ini.</p>
+
+                <form action="#" method="post" class="bg-white p-8 rounded-lg shadow-lg space-y-6">
+
+                    <div>
+                        <label for="nama" class="block text-sm font-semibold text-gray-600 mb-1">Nama Panggilan (Boleh Samaran) :</label>
+                        <input type="text" id="nama" name="nama" placeholder="Nama Anda" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-500">
+                    </div>
+
+                    <div>
+                        <label for="email" class="block text-sm font-semibold text-gray-600 mb-1">Email (Untuk Konfirmasi Jadwal) :</label>
+                        <input type="email" id="email" name="email" placeholder="Anda@gmail.com" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-500">
+                    </div>
+
+                    <div>
+                        <label for="layanan-form" class="block text-sm font-semibold text-gray-600 mb-1">Pilih Layanan :</label>
+                        <select name="layanan-form" id="layanan-form" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-500 bg-white">
+                            <option>Sesi Curhat (via chat)</option>
+                            <option>Teman Ngobrol (Voice Call)</option>
+                            <option>Sesi Tatap Muka (VIdeo Call)</option>
+                        </select>                    
+                    </div>
+
+                    <div>
+                        <button type="submit" class="w-full bg-sky-600 hover:bg-sky-700 text-white py-3 px-6 rounded-full font-medium transition duration-300">
+                            Jadwalkan Sesi Saya
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-400 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="hover:text-white transition duration-300">Facebook</a>
+                <a href="#" class="hover:text-white transition duration-300">Instagram</a>
+                <a href="#" class="hover:text-white transition duration-300">Twitter</a>
+            </div>
+
+            <div class="flex justify-center space-x-6 mb-4 text-sm">
+                <a href="#" class="hover:text-white transition duration-300">Kebijakan Privasi</a>
+                <a href="#" class="hover:text-white transition duration-300">Syarat & Ketentuan</a>
+            </div>
+
+            <p>&copy; 2025 TemanDengar. Semua Hak Cipta Dilindungi </p>
+        </div>
+    </footer>
+</body>
+</html>
