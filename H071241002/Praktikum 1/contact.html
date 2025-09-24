@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">VS</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact-info">
+    <h2>Contact Information</h2>
+    <table>
+      <tr>
+        <th>Email</th>
+        <td>vinav2936@Gmail.com</td>
+      </tr>
+      <tr>
+        <th>Telepon</th>
+        <td>0851-5823-3527</td>
+      </tr>
+      <tr>
+        <th>LinkedIn</th>
+        <td><a href="https://www.linkedin.com/in/vina-sucitra-6804b2384/">linkedin.com/in/vina</a></td>
+      </tr>
+      <tr>
+        <th>Instagram</th>
+        <td><a href="https://www.instagram.com/vina_sucitra024?igsh=MTc5Z3o0Z2JqY3I4eA==">@vina_sucitra024</a></td>
+      </tr>
+      <tr>
+        <th>GitHub</th>
+        <td><a href="https://github.com/VinaSucitra">github.com/vina</a></td>
+      </tr>
+    </table>
+  </section>
+
+  <section class="contact-form">
+    <h2>Send Me a Message</h2>
+    <form>
+      <label for="nama">Nama:</label><br>
+      <input type="text" id="nama" name="nama" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="telepon">Nomor Telepon:</label><br>
+      <input type="tel" id="telepon" name="telepon" required><br><br>
+
+      <p>Tipe Pesan:</p>
+      <div class="radio-group">
+          <input type="radio" id="pertanyaan" name="tipe" value="Pertanyaan" required>
+          <label for="pertanyaan">Pertanyaan</label>
+
+          <input type="radio" id="kritik" name="tipe" value="Kritik">
+          <label for="kritik">Kritik</label>
+
+          <input type="radio" id="saran" name="tipe" value="Saran">
+          <label for="saran">Saran</label>
+
+          <input type="radio" id="kerjasama" name="tipe" value="Kerjasama">
+          <label for="kerjasama">Kerjasama</label>
+        </div>
+
+      <label for="pesan">Pesan:</label><br>
+      <textarea id="pesan" name="pesan" rows="5" required></textarea><br><br>
+
+      <input type="checkbox" id="persetujuan" name="persetujuan" required>
+      <label for="persetujuan">Saya menyetujui pengolahan data ini</label><br><br>
+
+      <input type="submit" value="Kirim">
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Vina Sucitra | <a href="https://www.instagram.com/vina_sucitra024?igsh=MTc5Z3o0Z2JqY3I4eA==">Instagram</a> | <a href="https://github.com/VinaSucitra">GitHub</a></p>
+  </footer>
+
+</body>
+</html>

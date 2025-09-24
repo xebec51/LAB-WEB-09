@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wardah Beauty</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-white text-gray-800">
+
+<!-- Navbar -->
+<nav class="bg-gradient-to-r from-sky-200 to-pink-200 shadow-md fixed w-full z-10">
+  <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+    <!-- Brand -->
+    <h1 class="text-2xl font-bold text-sky-700">Wardah Beauty</h1>
+
+    <!-- Burger Button (Mobile) -->
+    <button id="menu-btn" class="md:hidden text-sky-700 focus:outline-none">
+      <!-- Icon burger -->
+      <svg xmlns="http://www.w3.org/2000/svg" 
+           class="h-8 w-8" 
+           fill="none" 
+           viewBox="0 0 24 24" 
+           stroke="currentColor">
+        <path stroke-linecap="round" 
+              stroke-linejoin="round" 
+              stroke-width="2" 
+              d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Menu -->
+    <ul id="menu" class="hidden md:flex flex-col md:flex-row md:space-x-6 text-sky-900 font-medium absolute md:static bg-white md:bg-transparent shadow md:shadow-none top-16 left-0 w-full md:w-auto">
+      <li><a href="#beranda" class="block px-6 py-2 hover:text-pink-500">Beranda</a></li>
+      <li><a href="#tentang" class="block px-6 py-2 hover:text-pink-500">Tentang</a></li>
+      <li><a href="#layanan" class="block px-6 py-2 hover:text-pink-500">Produk</a></li>
+      <li><a href="#koleksi" class="block px-6 py-2 hover:text-pink-500">Koleksi</a></li>
+      <li><a href="#kontak" class="block px-6 py-2 hover:text-pink-500">Kontak</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Script Toggle -->
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+
+  menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
+
+<!-- Header / Hero -->
+<header id="beranda" class="h-screen bg-gradient-to-r from-sky-50 to-pink-50 flex items-center justify-center text-center px-6">
+  <div>
+    <h2 class="text-4xl md:text-6xl font-bold text-sky-700 mb-4">Cantik Seutuhnya dengan Wardah</h2>
+    <p class="text-lg text-gray-600 mb-6">Produk halal, natural, dan terpercaya untuk perawatan kulit & kecantikan Anda.</p>
+    <a href="#layanan" class="bg-sky-600 text-white px-6 py-3 rounded-lg font-medium shadow hover:bg-sky-700">Lihat Produk</a>
+  </div>
+</header>
+
+<!-- Tentang -->
+<section id="tentang" class="py-20 max-w-6xl mx-auto px-6">
+  <h3 class="text-3xl font-bold text-center text-sky-700 mb-8">Tentang Wardah</h3>
+  <p class="text-center text-gray-800 leading-relaxed max-w-3xl mx-auto">
+    Wardah adalah brand kecantikan halal asli Indonesia yang berkomitmen menghadirkan produk perawatan kulit dan kosmetik yang natural, aman, serta berkualitas tinggi. Dengan filosofi “Inspiring Beauty”, Wardah mendukung wanita tampil percaya diri dengan kecantikan yang sehat dan alami.
+  </p>
+</section>
+
+<!-- Promo -->
+<section class="py-20 bg-gradient-to-r from-sky-100 to-pink-100">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h3 class="text-3xl font-bold text-sky-700 mb-6">Promo Spesial Wardah</h3>
+    <p class="text-gray-700 mb-8">Dapatkan <span class="font-semibold text-pink-600">diskon hingga 30%</span> untuk produk skincare pilihan bulan ini!</p>
+    <a href="#koleksi" class="bg-pink-400 text-white px-6 py-3 rounded-lg font-medium shadow hover:bg-pink-500">Belanja Sekarang</a>
+  </div>
+</section>
+
+<!-- Produk / Fitur -->
+<section id="layanan" class="py-20 bg-sky-50">
+  <h3 class="text-3xl font-bold text-center text-sky-700 mb-12">Produk Unggulan</h3>
+  <div class="space-y-12 max-w-6xl mx-auto px-6">
+
+    <!-- Produk 1 -->
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <img src="Pictures/skincare.jpg" alt="Wardah Skincare" class="w-full max-h-80 object-contain">
+      <div>
+        <h4 class="text-2xl font-semibold mb-3 text-sky-700">Wardah Skincare</h4>
+        <p class="text-gray-600 mb-4">Perawatan kulit sehat & glowing dengan bahan alami halal. Membantu menjaga kelembapan kulit, mencerahkan, dan membuat kulit lebih sehat setiap hari.</p>
+      </div>
+    </div>
+
+    <!-- Produk 2 -->
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <div class="order-2 md:order-1">
+        <h4 class="text-2xl font-semibold mb-3 text-sky-700">Wardah Makeup</h4>
+        <p class="text-gray-600 mb-4">Kosmetik modern dengan warna natural untuk berbagai momen. Formula ringan dan tahan lama, membuat penampilan segar dan elegan sepanjang hari.</p>
+      </div>
+      <img src="Pictures/makeup.jpg" alt="Wardah Makeup" class="w-full max-h-80 object-contain order-1 md:order-2">
+    </div>
+
+    <!-- Produk 3 -->
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <img src="Pictures/body.jpg" alt="Wardah Bodycare" class="w-full max-h-80 object-contain">
+      <div>
+        <h4 class="text-2xl font-semibold mb-3 text-sky-700">Wardah Bodycare</h4>
+        <p class="text-gray-600 mb-4">Perawatan tubuh wangi, lembut, dan menyegarkan sepanjang hari. Menutrisi kulit sekaligus memberikan aroma segar yang tahan lama.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Koleksi Produk -->
+<section id="koleksi" class="py-20 max-w-6xl mx-auto px-6">
+  <h3 class="text-3xl font-bold text-center text-sky-700 mb-12">Koleksi Terbaru</h3>
+  <div class="flex space-x-6 overflow-x-auto pb-4">
+
+    <!-- Produk 1 -->
+    <div class="min-w-[250px] bg-white shadow rounded-lg p-6 text-center">
+      <img src="Pictures/serum.jpg" class="h-40 mx-auto mb-4" alt="Serum">
+      <h4 class="font-semibold text-lg mb-2">Wardah Serum Brightening</h4>
+      <p class="text-gray-600 mb-2">Serum untuk kulit cerah dan glowing.</p>
+      <span class="text-sky-600 font-bold">Rp120.000</span>
+    </div>
+
+    <!-- Produk 2 -->
+    <div class="min-w-[250px] bg-white shadow rounded-lg p-6 text-center">
+      <img src="Pictures/lip cream matte.jpg" class="h-40 mx-auto mb-4" alt="Lipstick">
+      <h4 class="font-semibold text-lg mb-2">Wardah Matte Lipstick</h4>
+      <p class="text-gray-600 mb-2">Warna natural, tahan lama, halal.</p>
+      <span class="text-sky-600 font-bold">Rp75.000</span>
+    </div>
+
+    <!-- Produk 3 -->
+    <div class="min-w-[250px] bg-white shadow rounded-lg p-6 text-center">
+      <img src="Pictures/body mish.jpg" class="h-40 mx-auto mb-4" alt="Body Mist">
+      <h4 class="font-semibold text-lg mb-2">Wardah Body Mist</h4>
+      <p class="text-gray-600 mb-2">Aroma segar & tahan lama.</p>
+      <span class="text-sky-600 font-bold">Rp40.320</span>
+    </div>
+
+    <!-- Produk 4 -->
+    <div class="min-w-[250px] bg-white shadow rounded-lg p-6 text-center">
+      <img src="Pictures/cloud cushion.jpg" class="h-40 mx-auto mb-4" alt="Cloud Cushion">
+      <h4 class="font-semibold text-lg mb-2">Wardah Cloud Cushion</h4>
+      <p class="text-gray-600 mb-2">Cloud-matte finish, SPF 50 PA++++, tahan 18 jam.</p>
+      <span class="text-sky-600 font-bold">Rp132.750</span>
+    </div>
+
+    <!-- Produk 5 -->
+    <div class="min-w-[250px] bg-white shadow rounded-lg p-6 text-center">
+      <img src="Pictures/glow cushion.jpg" class="h-40 mx-auto mb-4" alt="Glow Cushion">
+      <h4 class="font-semibold text-lg mb-2">Wardah Glow Cushion</h4>
+      <p class="text-gray-600 mb-2">Memberikan hasil glowing dan natural.</p>
+      <span class="text-sky-600 font-bold">Rp121.500</span>
+    </div>
+
+    <!-- Produk 6 -->
+    <div class="min-w-[250px] bg-white shadow rounded-lg p-6 text-center">
+      <img src="Pictures/lip glasting.jpg" class="h-40 mx-auto mb-4" alt="Lip Glasting">
+      <h4 class="font-semibold text-lg mb-2">Wardah Lip Glasting</h4>
+      <p class="text-gray-600 mb-2">Bibir plump Glass, ringan & transferproof.</p>
+      <span class="text-sky-600 font-bold">Rp89.100</span>
+    </div>
+
+    <!-- Produk 7 -->
+    <div class="min-w-[250px] bg-white shadow rounded-lg p-6 text-center">
+      <img src="Pictures/lose powder.jpg" class="h-40 mx-auto mb-4" alt="Loose Powder">
+      <h4 class="font-semibold text-lg mb-2">Wardah Loose Powder</h4>
+      <p class="text-gray-600 mb-2">Bedak tabur ringan untuk tampilan natural.</p>
+      <span class="text-sky-600 font-bold">Rp40.000</span>
+    </div>
+
+    <!-- Produk 8 -->
+    <div class="min-w-[250px] bg-white shadow rounded-lg p-6 text-center">
+      <img src="Pictures/palette.jpg" class="h-40 mx-auto mb-4" alt="Palette">
+      <h4 class="font-semibold text-lg mb-2">Wardah Palette</h4>
+      <p class="text-gray-600 mb-2">Tekstur silky, blendable, tahan seharian.</p>
+      <span class="text-sky-600 font-bold">Rp95.000</span>
+    </div>
+
+    <!-- Produk 9 -->
+    <div class="min-w-[250px] bg-white shadow rounded-lg p-6 text-center">
+      <img src="Pictures/parfum.jpg" class="h-40 mx-auto mb-4" alt="Parfum">
+      <h4 class="font-semibold text-lg mb-2">Wardah Parfum</h4>
+      <p class="text-gray-600 mb-2">Aroma segar & tahan lama.</p>
+      <span class="text-sky-600 font-bold">Rp58.080</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- Testimoni -->
+<section class="py-20 max-w-6xl mx-auto px-6">
+  <h3 class="text-3xl font-bold text-center text-sky-700 mb-12">Apa Kata Mereka?</h3>
+  <div class="grid md:grid-cols-3 gap-8">
+    <div class="bg-white shadow-md rounded-lg p-6 text-center">
+      <p class="italic text-gray-600 mb-4">“Wardah membuat kulitku lebih sehat dan glowing. Produk favoritku setiap hari!”</p>
+      <h4 class="font-semibold text-sky-700">- Aisyah, 21</h4>
+      <p class="text-yellow-400">⭐⭐⭐⭐⭐</p>
+    </div>
+    <div class="bg-white shadow-md rounded-lg p-6 text-center">
+      <p class="italic text-gray-600 mb-4">“Makeup Wardah ringan dan natural. Cocok banget untuk daily look.”</p>
+      <h4 class="font-semibold text-sky-700">- Sinta, 24</h4>
+      <p class="text-yellow-400">⭐⭐⭐⭐</p>
+    </div>
+    <div class="bg-white shadow-md rounded-lg p-6 text-center">
+      <p class="italic text-gray-600 mb-4">“Produk bodycare-nya wangi segar, bikin percaya diri seharian.”</p>
+      <h4 class="font-semibold text-sky-700">- Rani, 27</h4>
+      <p class="text-yellow-400">⭐⭐⭐⭐⭐</p>
+    </div>
+  </div>
+</section>
+
+<!-- Form Kontak -->
+<section id="kontak" class="py-20 bg-sky-50">
+  <h3 class="text-3xl font-bold text-center text-sky-700 mb-8">Hubungi Kami</h3>
+  <form class="max-w-lg mx-auto bg-white p-8 shadow rounded-lg space-y-4">
+    <input type="text" placeholder="Nama Anda" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-sky-500" required>
+    <input type="email" placeholder="Email Anda" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-sky-500" required>
+    <textarea placeholder="Pesan" rows="4" class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-sky-500" required></textarea>
+    <button type="submit" class="w-full bg-sky-600 text-white py-3 rounded-lg hover:bg-sky-700">Kirim Pesan</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gradient-to-r from-sky-200 to-pink-200 text-sky-900 py-10">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8 items-center">
+  
+    <div>
+      <h4 class="font-semibold text-lg mb-3">Wardah Beauty</h4>
+      <p>Inspiring Beauty produk halal, natural, dan terpercaya.</p>
+    </div>
+
+    <div>
+      <h4 class="font-semibold text-lg mb-3">Hubungi Kami</h4>
+      <p>Email: info@wardahbeauty.com</p>
+      <p>Tel: +62 812 3456 7890</p>
+      <div class="flex space-x-4 mt-3 ">
+        <a href="https://www.instagram.com/wardahbeauty?igsh=MnBpZ2tyODBwODQw" class="hover:text-pink-500">Instagram</a>
+        <a href="https://id.shp.ee/Z6Q1zVj" class="hover:text-pink-500">Shopee</a>
+      </div>
+    </div>
+
+    <div class="text-center md:text-right">
+      <p>© 2025 Wardah Beauty | All Rights Reserved</p>
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>
+
