@@ -1,0 +1,219 @@
+/* Importing a clean, modern font */
+@font-face {
+    font-family: 'Persona5MenuFont';
+    src: url(asset/Persona5MenuFontPrototype-Regular.ttf);
+}
+/* General body styling */
+body {
+    background-color: #0d1226; /* Dark navy blue background */
+    color: #e5e5e5; /* Light grey text */
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main header and navigation */
+.main-header {
+    background-color: #213c54; /* Muted blue */
+    color: #ffffff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-bottom: 5px solid #ffcc00; /* Yellow accent line */
+}
+
+.main-header h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 3px;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    background-color: rgba(255, 204, 0, 0.2);
+    color: #ffcc00;
+}
+
+/* Sections */
+section {
+    background-color: #1a233b; /* Slightly lighter dark background for sections */
+    margin: 40px;
+    padding: 40px;
+    border-radius: 8px;
+    border-left: 5px solid #ffcc00; /* Yellow accent border */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+section h1,
+section h2 {
+    color: #b0c4de; /* A light blue/grey color */
+    font-family: 'Oswald', sans-serif;
+    border-bottom: 2px solid #b0c4de;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #1f2a40;
+    border: 1px solid #ffcc00;
+}
+
+table, th, td {
+    border: 1px solid #ffcc00;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #213c54;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #2a354c;
+}
+
+/* Lists */
+ul, ol {
+    padding-left: 20px;
+}
+
+ul li, ol li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #404b6b;
+}
+
+ul li:last-child, ol li:last-child {
+    border-bottom: none;
+}
+
+/* Form elements */
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #b0c4de;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #1f2a40;
+    border: 1px solid #b0c4de;
+    color: #ffffff;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    background-color: #ffcc00;
+    color: #0d1226;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #e5b300;
+}
+
+/* Other specific elements */
+p {
+    margin-bottom: 15px;
+}
+
+strong {
+    color: #ffcc00;
+}
+
+em {
+    font-style: italic;
+    color: #b0c4de;
+}
+
+/* Image styling */
+img {
+    border: 2px solid #ffcc00;
+    border-radius: 50%; /* Make the image a circle */
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5); /* Yellow glow effect */
+}
+
+/* Footer Styling untuk Social Media Icons */
+.social-footer {
+    background-color: #213c54; /* Muted blue, sesuai header */
+    color: #e5e5e5;
+    padding: 20px 40px;
+    text-align: center;
+    border-top: 5px solid #ffcc00; /* Garis aksen kuning */
+    margin-top: 40px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    /* Mengatur warna dan ukuran ikon SVG */
+    color: #b0c4de; /* Warna light blue/grey */
+    transition: color 0.3s;
+    display: inline-flex; 
+}
+
+.social-links a:hover {
+    color: #ffcc00; /* Warna kuning pada hover */
+}
+
+.social-footer p {
+    margin: 5px 0 0 0;
+    font-size: 0.9em;
+}
+
+.social-footer a {
+    color: inherit; /* agar link "Copyright" menggunakan warna text footer */
+    text-decoration: none;
+}
