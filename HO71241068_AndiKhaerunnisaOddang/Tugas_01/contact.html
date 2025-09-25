@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Andi Khaerunnisa Oddang</title>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<section class="contact-info">
+    <div class="container">
+      <h1>CONTACT INFORMATION</h1>
+      <table class="contact-table">
+        <tr>
+          <td class="label"><i class="fas fa-envelope"></i> Email</td>
+          <td>andi.khnisa@gmail.com</td>
+        </tr>
+        <tr>
+          <td class="label"><i class="fas fa-phone"></i> Telepon</td>
+          <td>+62 812-1835-7672</td>
+        </tr>
+        <tr>
+          <td class="label"><i class="fab fa-linkedin"></i> LinkedIn</td>
+          <td><a href="https://linkedin.com/in/andi-khaerunnisa-oddang-632330280" target="_blank">Andi Khaerunnisa Oddang</a></td>
+        </tr>
+        <tr>
+          <td class="label"><i class="fab fa-instagram"></i> Instagram</td>
+          <td><a href="https://instagram.com/chnxaa" target="_blank">@chnxaa</a></td>
+        </tr>
+        <tr>
+          <td class="label"><i class="fab fa-github"></i> GitHub</td>
+          <td><a href="https://github.com/chxnsa" target="_blank">chxnsa</a></td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <section class="contact-form-section">
+    <div class="container">
+      <h2>CONTACT FORM</h2>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="nama">Nama:</label>
+          <input type="text" id="nama" name="nama" required placeholder="Nama Anda">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="contoh@email.com">
+        </div>
+        <div class="form-group">
+          <label for="telepon">Nomor Telepon:</label>
+          <input type="tel" id="telepon" name="telepon" required placeholder="+xx xxx-xxxx-xxxx">
+        </div>
+        <div class="radio-group">
+          <label class="radio-label">
+            <input type="radio" name="tipe_pesan" value="pertanyaan" required> Pertanyaan
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="tipe_pesan" value="kritik"> Kritik
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="tipe_pesan" value="saran"> Saran
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="tipe_pesan" value="kerjasama"> Kerjasama
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="pesan">Pesan Detail:</label>
+          <textarea id="pesan" name="pesan" rows="6" required placeholder="Tulis pesan Anda di sini..."></textarea>
+        </div>
+        <div class="">
+          <label class="checkbox-label">
+            <input type="checkbox" name="persetujuan" required>
+            <span>Saya setuju data saya diproses</span>
+          </label>
+        </div> <br>
+        <button type="submit" class="submit-btn">Submit Form</button>
+      </form>
+    </div>
+  </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2024 Andi Khaerunnisa Oddang. All Rights Reserved.</p>
+          <div class="social-links">
+            <a href="https://linkedin.com/in/andi-khaerunnisa-oddang-632330280" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+            <a href="https://instagram.com/chnxaa" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="https://github.com/chxnsa" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
