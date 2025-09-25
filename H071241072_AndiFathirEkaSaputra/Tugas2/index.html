@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operasi Khusus: Modern Warfare</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        courier: ['"Courier New"', 'monospace'],
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-black text-gray-200 font-courier">
+
+    <!-- Navbar -->
+    <nav class="p-4 fixed w-full z-10 bg-black bg-opacity-70 backdrop-blur-sm">
+        <div class="container flex justify-between items-center mx-auto">
+            <div class="text-xl font-bold text-green-400 tracking-widest">MW HQ</div>
+            <ul class="flex space-x-6 text-sm">
+                <li><a href="#OPERASIONAL" class="hover:text-green-400 transition duration-300">OPERASIONAL</a></li>
+                <li><a href="#TENTANG" class="hover:text-green-400 transition duration-300">UNIT</a></li>
+                <li><a href="#MISI" class="hover:text-green-400 transition duration-300">MISI</a></li>
+                <li><a href="#PENDAFTARAN" class="hover:text-green-400 transition duration-300">PENDAFTARAN</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header id="OPERASIONAL" class="h-screen flex items-end bg-[url('assets/locate.gif')] bg-cover bg-center">
+        <div class="w-full h-full bg-gradient-to-t from-black to-transparent p-12 flex flex-col justify-end">
+            <p class="text-sm text-green-400 mb-2 tracking-widest">LAPORAN: 07-06-25</p>
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white leading-tight">BERGABUNG DENGAN OPERASI MODERN WARFARE</h1>
+            <p class="text-lg md:text-xl max-w-2xl mb-8 text-gray-400">
+                Kami mencari operator terbaik untuk misi berisiko tinggi. Kami bukan sekadar pasukan, kami adalah respons terakhir terhadap ancaman global.
+            </p>
+            <a href="#PENDAFTARAN" class="bg-green-500 text-black font-bold py-3 px-8 rounded-full text-lg hover:bg-green-400 transition duration-300">AJUKAN APLIKASI</a>
+        </div>
+    </header>
+
+    <!-- Tentang -->
+    <section id="TENTANG" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 text-center text-green-400">UNIT OPERASI KHUSUS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg border-l-4 border-green-500 hover:scale-105 transition duration-300">
+                    <h3 class="text-xl font-semibold mb-2 text-white">Task Force 141</h3>
+                    <p class="text-gray-400 text-sm">Unit anti-terorisme elit, bertugas di garis depan untuk mengatasi ancaman paling berbahaya.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg border-l-4 border-green-500 hover:scale-105 transition duration-300">
+                    <h3 class="text-xl font-semibold mb-2 text-white">Shadow Company</h3>
+                    <p class="text-gray-400 text-sm">Operasi rahasia, penegak keadilan di luar batas-batas hukum militer konvensional.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg border-l-4 border-green-500 hover:scale-105 transition duration-300">
+                    <h3 class="text-xl font-semibold mb-2 text-white">SpecGru</h3>
+                    <p class="text-gray-400 text-sm">Grup operasi gabungan, berfokus pada intelijen, pengawasan, dan operasi khusus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Misi -->
+    <section id="misi" class="py-20 bg-black">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 text-center text-green-400">MISI AKTIF</h2>
+            <div class="flex flex-col md:flex-row items-center md:space-x-8">
+                <div class="w-full md:w-1/2">
+                    <img src="https://images5.alphacoders.com/102/1021954.jpg" alt="Misi Lanjutan" class="rounded-lg shadow-xl mb-6 md:mb-0">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-4 text-white">Lacak dan Eliminasi</h3>
+                    <p class="text-gray-400 mb-4">
+                        Unit kami sedang melacak sebuah organisasi teroris yang beroperasi di wilayah Al Mazrah.
+                        Misi ini memerlukan operator dengan kemampuan tempur dan navigasi tingkat tinggi di lingkungan perkotaan.
+                    </p>
+                    <p class="text-green-500 font-semibold text-sm">STATUS: KRISIS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Pendaftaran -->
+    <section id="pendaftaran" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-4 text-green-400">PENDAFTARAN OPERASI BARU</h2>
+            <p class="text-lg text-gray-400 mb-8">
+                Isi formulir ini untuk mengajukan diri sebagai operator potensial.
+                Hanya kandidat terbaik yang akan dihubungi untuk proses seleksi lebih lanjut.
+            </p>
+            <form action="#" method="post" class="max-w-2xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <input type="text" placeholder="Nama Lengkap (Alias)" class="p-3 rounded-lg bg-gray-800 border border-gray-700 text-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400" required>
+                    <input type="email" placeholder="Email Kontak" class="p-3 rounded-lg bg-gray-800 border border-gray-700 text-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400" required>
+                    <input type="text" placeholder="Spesialisasi Operasi (Cth: Intel, Tempur, Medis)" class="md:col-span-2 p-3 rounded-lg bg-gray-800 border border-gray-700 text-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400" required>
+                </div>
+                <textarea placeholder="Riwayat Operasi/Pengalaman (singkat)" rows="4" class="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 text-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400 mb-6" required></textarea>
+                <button type="submit" class="w-full bg-green-500 text-black font-bold py-3 rounded-lg text-lg hover:bg-green-400 transition duration-300">KIRIM APLIKASI</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 bg-black text-gray-500 text-center text-xs">
+        <p>&copy; 2025 Divisi Operasi Modern Warfare. Semua data dan informasi bersifat rahasia.</p>
+    </footer>
+
+</body>
+</html>
