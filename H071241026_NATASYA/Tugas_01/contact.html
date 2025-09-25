@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natasya - Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">MyPort</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Info -->
+    <section class="card">
+        <h2>Contact Me</h2>
+        <p>If you would like to contact me, please do so using the following methods:</p>
+        <table>
+            <tr><th>Email</th><td>natasyacaca916@gmail.com</td></tr>
+            <tr><th>Phone</th><td>+6281244740802</td></tr>
+            <tr><th>LinkedIn</th><td><a href="https://linkedin.com/in/natasya-r" target="_blank">Natasya R</a></td></tr>
+            <tr><th>Instagram</th><td><a href="https://instagram.com/_nnachaa" target="_blank">_nnachaa</a></td></tr>
+            <tr><th>GitHub</th><td><a href="https://github.com/Natasyacay1" target="_blank">Natasyacay1</a></td></tr>
+        </table>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="card">
+        <h2>Send a Message</h2>
+        <form>
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telp">Nomor Telepon:</label>
+            <input type="tel" id="telp" name="telp" required>
+
+            <p>Tipe Pesan:</p>
+            <label><input type="radio" name="tipe" value="Pertanyaan" required> Pertanyaan</label>
+            <label><input type="radio" name="tipe" value="Kritik"> Kritik</label>
+            <label><input type="radio" name="tipe" value="Saran"> Saran</label>
+            <label><input type="radio" name="tipe" value="Kerjasama"> Kerjasama</label>
+
+            <label for="message">Pesan Detail:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="btn-submit">Kirim</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Natasya. All Rights Reserved.
+            <a href="https://instagram.com/_nnachaa">Instagram</a> · 
+            <a href="https://linkedin.com/in/natasya-r">LinkedIn</a> · 
+            <a href="https://github.com/Natasyacay1">GitHub</a>
+        </p>
+    </footer>
+</body>
+</html>
